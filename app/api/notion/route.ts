@@ -26,8 +26,8 @@ export async function POST(request: Request) {
           ],
         },
         Wallet: {
-          type: "text",
-          rich_text: [
+          type: "title",
+          title: [
             {
               type: "text",
               text: {
