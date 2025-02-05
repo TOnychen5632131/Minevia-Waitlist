@@ -124,6 +124,7 @@ export default function Home() {
         <Form
           name={name}
           email={email}
+          wallet={wallet}
           handleNameChange={handleNameChange}
           handleEmailChange={handleEmailChange}
           handleWalletChange={handleWalletChange}
