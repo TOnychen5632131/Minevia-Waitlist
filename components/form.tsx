@@ -51,7 +51,7 @@ export default function Form({
       <motion.div variants={itemVariants}>
         <Input
           type="text"
-          placeholder="Your wallet Address"
+          placeholder="Your Wallet Address"
           value={email}
           onChange={handleWalletChange}
         />
