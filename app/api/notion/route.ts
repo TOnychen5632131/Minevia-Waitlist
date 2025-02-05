@@ -7,7 +7,7 @@ export async function POST(request: Request) {
     const notion = new Client({ auth: process.env.NOTION_SECRET });
     const response = await notion.pages.create({
       parent: {
-        database_id: `${process.env.NOTION_DB}`,
+        database_id: process.env.NOTION_DB!,
       },
       properties: {
         Email: {
@@ -26,12 +26,12 @@ export async function POST(request: Request) {
           ],
         },
         Wallet: {
-          type: "title",
-          title: [
+          type: "rich_text",
+          rich_text: [
             {
               type: "text",
               text: {
-                content: body?.wallet || "", // 如果没有值，就传空字符串
+                content: body?.wallet || "",
               },
             },
           ],
