@@ -18,7 +18,7 @@ export default function Home() {
     setEmail(event.target.value);
   };
   const handlewalletChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setWallet(event.target.value);
+    setwallet(event.target.value);
   };
  
   const handleNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -123,6 +123,7 @@ export default function Home() {
           email={email}
           handleNameChange={handleNameChange}
           handleEmailChange={handleEmailChange}
+          handlewalletChange={handlewalletChange}
           handleSubmit={handleSubmit}
           loading={loading}
         />
