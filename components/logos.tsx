@@ -7,8 +7,8 @@ import TextBlur from "./ui/text-blur";
 const logos = [
   { href: "https://nextjs.org", src: "/nextjs.svg", alt: "Next.js Logo" },
   { href: "https://soliditylang.org", src: "/solidity.svg", alt: "Solidity Logo" },
-  { href: "https://ethereum.org", src: "/ethereum.svg", alt: "Ethereum Logo" },
-  { href: "https://ethers.org", src: "/ethers.svg", alt: "Ethers.js Logo" },
+  { href: "https://ethereum.org", src: "/solana-svgrepo-com.svg", alt: "Ethereum Logo" },
+  { href: "https://ethers.org", src: "/ether-svgrepo-com.svg", alt: "Ethers.js Logo" },
   { href: "https://ipfs.io", src: "/ipfs.svg", alt: "IPFS Logo" },
   { href: "https://vercel.com", src: "/vercel.svg", alt: "Vercel Logo" },
 ];
