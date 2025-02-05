@@ -53,7 +53,7 @@ export default function Form({
           type="text"
           placeholder="Your wallet Address"
           value={email}
-          onChange={handlewalletChange}
+          onChange={handleWalletChange}
         />
       </motion.div>
       <motion.div variants={itemVariants}>
