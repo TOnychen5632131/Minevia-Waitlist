@@ -10,6 +10,7 @@ import { containerVariants, itemVariants } from "@/lib/animation-variants";
 interface FormProps {
   name: string;
   email: string;
+  wallet: string;
   handleNameChange: (e: ChangeEvent<HTMLInputElement>) => void;
   handleEmailChange: (e: ChangeEvent<HTMLInputElement>) => void;
   handleWalletChange: (e: ChangeEvent<HTMLInputElement>) => void;
@@ -20,6 +21,7 @@ interface FormProps {
 export default function Form({
   name,
   email,
+  wallet,
   handleNameChange,
   handleEmailChange,
   handleWalletChange,
