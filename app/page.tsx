@@ -12,6 +12,8 @@ import Footer from "@/components/footer";
 export default function Home() {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
+  const [wallet, setWallet] = useState<string>("");
+
   const [loading, setLoading] = useState<boolean>(false);
 
   const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -92,6 +94,7 @@ export default function Home() {
       success: (data) => {
         setName("");
         setEmail("");
+        setWallet("");
         return "Thank you for joining the waitlist 🎉";
       },
       error: (error) => {
