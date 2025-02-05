@@ -44,7 +44,7 @@ export const NotionWaitlistEmail = ({ userFirstname }: EmailProps) => (
         </Text>
         <Text style={paragraph}>
           You can also follow me on X/Twitter for updates:{" "}
-          <a href="https://x.com/blakssh" style={link}>
+          <a href="https://x.com/MineviaWeb3" style={link}>
             @blakssh
           </a>
         </Text>
