@@ -25,6 +25,17 @@ export async function POST(request: Request) {
             },
           ],
         },
+        Wallet: {
+          type: "rich_text",
+          rich_text: [
+            {
+              type: "text",
+              text: {
+                content: body?.wallet || "", // 如果没有值，就传空字符串
+              },
+            },
+          ],
+        },
       },
     });
 
@@ -34,6 +45,7 @@ export async function POST(request: Request) {
 
     return NextResponse.json({ success: true }, { status: 200 });
   } catch (error) {
+    console.error("Notion insertion error:", error);
     return NextResponse.json({ success: false }, { status: 500 });
   }
 }
