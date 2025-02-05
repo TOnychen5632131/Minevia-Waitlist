@@ -52,7 +52,7 @@ export default function Form({
         <Input
           type="text"
           placeholder="Your Wallet Address"
-          value={email}
+          value={wallet}
           onChange={handleWalletChange}
         />
       </motion.div>
