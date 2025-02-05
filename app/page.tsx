@@ -17,7 +17,10 @@ export default function Home() {
   const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(event.target.value);
   };
-
+  const handlewalletChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setWallet(event.target.value);
+  };
+ 
   const handleNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setName(event.target.value);
   };

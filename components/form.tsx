@@ -12,6 +12,7 @@ interface FormProps {
   email: string;
   handleNameChange: (e: ChangeEvent<HTMLInputElement>) => void;
   handleEmailChange: (e: ChangeEvent<HTMLInputElement>) => void;
+  handleWalletChange: (e: ChangeEvent<HTMLInputElement>) => void;
   handleSubmit: () => void;
   loading: boolean;
 }
@@ -21,6 +22,7 @@ export default function Form({
   email,
   handleNameChange,
   handleEmailChange,
+  handleWalletChange,
   handleSubmit,
   loading,
 }: FormProps) {
@@ -44,6 +46,14 @@ export default function Form({
           placeholder="Your Email Address"
           value={email}
           onChange={handleEmailChange}
+        />
+      </motion.div>
+      <motion.div variants={itemVariants}>
+        <Input
+          type="text"
+          placeholder="Your wallet Address"
+          value={email}
+          onChange={handlewalletChange}
         />
       </motion.div>
       <motion.div variants={itemVariants}>
